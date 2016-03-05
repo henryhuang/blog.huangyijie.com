@@ -6,3 +6,4 @@ node_modules/
 public/
 .deploy*/
 source
+themes/oishi_bak/*

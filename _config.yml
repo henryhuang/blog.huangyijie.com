@@ -71,8 +71,8 @@ theme: oishi
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://gitcafe.com/huangyijie/huangyijie.git
-  branch: gitcafe-pages
+  repo: https://git.coding.net/henryhuang/huangyijie.git 
+  branch: coding-pages
 
 archive_generator:
   per_page: 0
