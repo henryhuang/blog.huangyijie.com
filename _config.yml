@@ -85,3 +85,8 @@ category_generator:
 duoshuo_shortname: cnhalo
 
 avatar: /images/avatar.png
+
+sitemap:
+    path: sitemap.xml
+
+google_site_verification: HxORZgOM92bsRJIEBu1FmbJd6bh4r44-OhACYZ_1uak  
