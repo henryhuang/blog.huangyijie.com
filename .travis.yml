@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "5.11"
+
+script:
+  - npm run deploy
+
+branches:
+  only:
+    - master
