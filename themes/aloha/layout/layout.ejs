@@ -1,0 +1,111 @@
+<%
+var pageTitle = page.title || config.subtitle || '';
+if (is_archive()) pageTitle = 'Archives';
+if (is_tag()) pageTitle = 'Tag: ' + page.tag;
+if (is_category()) pageTitle = 'Category: ' + page.category;
+if (is_month()) pageTitle += ': ' + page.month + '/' + page.year;
+if (is_year()) pageTitle += ': ' + page.year;
+if (pageTitle == '') {
+    pageTitle = config.title;
+} else {
+    pageTitle += ' | ' + config.title;
+}
+%>
+
+<!DOCTYPE html>
+<html lang="<%= config.language %>">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title><%= pageTitle %></title>
+
+    <% var cdn = theme.cdn;%>
+    <% if (theme.stylesheets !== undefined && theme.stylesheets.length > 0) { %>
+        <!-- stylesheets list from config.yml -->
+        <% theme.stylesheets.forEach(function(url) { %>
+            <link rel="stylesheet" href="<%= resourceURL(cdn, config.root, url) %>">
+        <% }); %>
+    <% } %>
+
+    <script>
+        var algoliaEnabled = false;
+        <% if(config.algolia && config.algolia.applicationID) {%>
+            var algolia = {
+                'applicationID': '<%= config.algolia.applicationID%>',
+                'apiKey': '<%= config.algolia.apiKey%>',
+                'indexName': '<%= config.algolia.indexName%>'
+            };
+            algoliaEnabled = true;
+        <%}%>
+    </script>
+
+</head>
+<body id="body" style="margin-bottom: 0;" class="pushable">
+
+    <div class="ui top fixed menu">
+        <a class="item" id="menu-icon"><i class="sidebar icon"></i></a>
+    </div>
+
+    <div id="menu-sidebar" class="ui left vertical sidebar menu">
+
+        <div id="sidebar-top" class="ui center aligned grid">
+            <div class="sixteen wide column">
+                <div class="content">
+                    <h3><%= config.title %></h3>
+                </div>
+            </div>
+        </div>
+        <%-partial('_partial/sidebar-card')%>
+
+        <% Object.keys(theme.menu).forEach(function(key) { %>
+        <% var className = "item"; %>
+
+        <% if (url_for(theme.menu[key].value) == '/' + path.replace('/index.html', '') || (url_for(theme.menu[key].value) == '/.' && is_home())) { %>
+        <% className = "active item"%>
+        <% } %>
+
+        <a href="<%= theme.menu[key].value %>" class="<%= className %>">
+            <i class="<%= theme.menu[key].icon %> icon"></i>
+            <%= __(theme.menu[key].name) %>
+        </a>
+
+        <% }); %>
+
+        <% if(config.algolia && config.algolia.applicationID) {%>
+
+        <div class="ui search item">
+            <div class="ui transparent icon input">
+                <input id="search-input" type="text" placeholder="<%= __('searchPlaceholder')%>">
+                <i class="search link icon"></i>
+            </div>
+        </div>
+
+        <% } %>
+    </div>
+
+    <div class="pusher body-content">
+        <div id="content" class="ui container">
+            <div class="ui one column grid">
+                <div class="column">
+                    <div class="ui main container">
+                        <%- body %>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%- partial('_partial/footer')%>
+    </div>
+
+<% if(config.algolia && config.algolia.applicationID) {%>
+    <%- partial('_partial/search-modal')%>
+<%}%>
+
+<% if (theme.scripts !== undefined && theme.scripts.length > 0) { %>
+<!-- scripts list from theme config.yml -->
+<% theme.scripts.forEach(function(url) { %>
+<script src="<%= resourceURL(cdn, config.root, url) %>"></script>
+<% }); %>
+<% } %>
+
+</body>
+</html>
