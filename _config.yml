@@ -77,7 +77,7 @@ algolia:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://git.coding.net/henryhuang/huangyijie.git 
+  repo: git@git.coding.net:henryhuang/huangyijie.git
   branch: coding-pages
 
 archive_generator:
