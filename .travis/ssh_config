@@ -1,0 +1,5 @@
+Host git.coding.net
+	User h1886@outlook.com
+	StrictHostKeyChecking no
+	IdentityFile ~/.ssh/id_rsa
+	IdentitiesOnly yes
