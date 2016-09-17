@@ -26,6 +26,8 @@ if (pageTitle == '') {
             <link rel="stylesheet" href="<%= resourceURL(cdn, config.root, url) %>">
         <% }); %>
     <% } %>
+    
+    <%-partial('_partial/structured-data-markup')%>
 
     <script>
         var algoliaEnabled = false;
