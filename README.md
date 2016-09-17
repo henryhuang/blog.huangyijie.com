@@ -1,1 +1,1 @@
-[blog.huangyijie.com](http://blog.huangyijie.com)的源码，由于国内访问速度的原因，部署在gitcafe上。
+[huangyijie.com](http://huangyijie.com)的源码，由于国内访问速度的原因，部署在gitcafe上，通过Travis CI持续集成。
