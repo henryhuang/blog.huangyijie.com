@@ -5,7 +5,7 @@
 # Site
 title: 黄奕杰
 subtitle: 
-description: 记录我想纪录的纪录。
+description: 黄奕杰，是我的个人博客，记录我想纪录的纪录，不限于计算机，huangyijie.com。
 author: Henry Huang
 language: zh-CN
 timezone: Asia/Shanghai
@@ -72,6 +72,9 @@ algolia:
   apiKey: 'c505c894c9118139fa56f79081982d1e'
   indexName: 'prod_huangyijie.com'
 
+# social
+twitter:  henryhuang1886
+github: henryhuang
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
@@ -116,4 +119,4 @@ sidebar:
   social:
     github: https://github.com/henryhuang
     weibo: http://weibo.com/626242034
-    twitter: 
+    twitter: https://twitter.com/henryhuang1886
