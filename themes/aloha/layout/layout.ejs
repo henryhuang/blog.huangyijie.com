@@ -20,6 +20,10 @@ if (pageTitle == '') {
     <meta name="description" content="<%= config.description %>">
     <title><%= pageTitle %></title>
 
+    <% if (config.highlight.enable){ %>
+        <link href="https://fonts.gmirror.org/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    <% } %>
+
     <% var cdn = theme.cdn;%>
     <% if (theme.stylesheets !== undefined && theme.stylesheets.length > 0) { %>
         <!-- stylesheets list from config.yml -->
@@ -29,23 +33,10 @@ if (pageTitle == '') {
     <% } %>
     
     <!-- Open Graph -->
-    <%- open_graph({
-         twitter_site: config.twitter
-    }) %>
+    <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
 
     <%-partial('_partial/structured-data-markup')%>
-    
-    <script>
-        var algoliaEnabled = false;
-        <% if(config.algolia && config.algolia.applicationID) {%>
-            var algolia = {
-                'applicationID': '<%= config.algolia.applicationID%>',
-                'apiKey': '<%= config.algolia.apiKey%>',
-                'indexName': '<%= config.algolia.indexName%>'
-            };
-            algoliaEnabled = true;
-        <%}%>
-    </script>
+    <%-partial('_partial/js-params')%>
 
 </head>
 <body id="body" style="margin-bottom: 0;" class="pushable">
