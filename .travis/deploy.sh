@@ -13,7 +13,7 @@ cp .travis/ssh_config ~/.ssh/config
 # Set Git config
 git config --global user.name "henryhuang"
 git config --global user.email h1886@outlook.com
-# Clone the repository
-# git clone git@git.coding.net:henryhuang/huangyijie.git -b coding-pages .deploy_git
+# Clone the theme repository
+git clone https://github.com/henryhuang/hexo-theme-aloha.git ./themes/aloha
 # Deploy to GitHub
 npm run deploy
