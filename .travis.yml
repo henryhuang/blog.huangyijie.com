@@ -22,7 +22,7 @@ addons:
   ssh_known_hosts: git.coding.net
 
 script:
-  - npm run build
+  - gulp beforedeploy
 
 branches:
   only:
