@@ -3,13 +3,17 @@ var gulp = require('gulp');
 var yaml = require('js-yaml');
 var fs = require('fs');
 var git = require('gulp-git');
-var gulpsync = require('gulp-sync')(gulp);
+var runSequence = require('run-sequence');
 
 gulp.task('default', function() {
     console.log("http://huangyijie.com")
 });
 
-gulp.task('beforedeploy', gulpsync.sync(['clonetheme', 'configtheme', 'gen']));
+gulp.task('beforedeploy', function(done) {
+    runSequence('clonetheme', 'configtheme', 'gen', function() {
+        console.log('before deploy done!');
+    });
+});
 
 gulp.task('configtheme', function(cb) {
 
