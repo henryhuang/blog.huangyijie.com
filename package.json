@@ -12,9 +12,11 @@
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-git": "^1.11.3",
     "gulp-less": "^3.1.0",
     "gulp-livereload": "^3.8.1",
     "gulp-plumber": "^1.1.0",
+    "gulp-sync": "^0.1.4",
     "gulp-watch": "^4.3.10",
     "hexo": "^3.1.0",
     "hexo-algolia": "^0.2.0",

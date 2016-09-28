@@ -2,12 +2,14 @@ var exec = require('child_process').exec;
 var gulp = require('gulp');
 var yaml = require('js-yaml');
 var fs = require('fs');
+var git = require('gulp-git');
+var gulpsync = require('gulp-sync')(gulp);
 
 gulp.task('default', function() {
     console.log("http://huangyijie.com")
 });
 
-gulp.task('beforedeploy', ['clonetheme', 'configtheme', 'gen'], function() {
+gulp.task('beforedeploy', gulpsync.sync(['clonetheme', 'configtheme', 'gen']), function() {
     console.log("before deploy done, now start deploy...")
 });
 
@@ -34,12 +36,10 @@ gulp.task('configtheme', function(cb) {
 })
 
 gulp.task('clonetheme', function(cb) {
-    exec('git clone https://github.com/henryhuang/hexo-theme-aloha.git ./themes/aloha', function(err, stdout, stderr) {
+    git.clone('https://github.com/henryhuang/hexo-theme-aloha.git', { args: './themes/aloha' }, function(err) {
         if (err) {
-            console.error(err);
-            return;
+            throw err;
         }
-        console.log(stdout);
     });
 })
 
