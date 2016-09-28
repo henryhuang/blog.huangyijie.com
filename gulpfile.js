@@ -9,9 +9,7 @@ gulp.task('default', function() {
     console.log("http://huangyijie.com")
 });
 
-gulp.task('beforedeploy', gulpsync.sync(['clonetheme', 'configtheme', 'gen']), function() {
-    console.log("before deploy done, now start deploy...")
-});
+gulp.task('beforedeploy', gulpsync.sync(['clonetheme', 'configtheme', 'gen']));
 
 gulp.task('configtheme', function(cb) {
 
