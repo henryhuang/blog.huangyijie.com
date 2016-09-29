@@ -4,19 +4,22 @@ var yaml = require('js-yaml');
 var fs = require('fs');
 var git = require('gulp-git');
 var runSequence = require('run-sequence');
+var https = require('https');
+var decompress = require('gulp-decompress');
 
 gulp.task('default', function() {
     console.log("http://huangyijie.com")
 });
 
+// before deploy
 gulp.task('beforedeploy', function(done) {
-    runSequence('clonetheme', 'configtheme', 'gen', function() {
-        console.log('before deploy done!');
+    runSequence('configtheme', 'gen', function() {
+        console.log('beforedeploy done!');
     });
 });
 
-gulp.task('configtheme', function(cb) {
 
+function configtheme(cb) {
     var configFilePath = './themes/aloha/_config.yml';
 
     var c = yaml.safeLoad(fs.readFileSync(configFilePath, 'utf8'));
@@ -34,15 +37,37 @@ gulp.task('configtheme', function(cb) {
 
     fs.writeFileSync(configFilePath, y, 'utf8');
 
-    cb();
-})
+    if(cb) {
+        cb();
+    }
+}
 
-gulp.task('clonetheme', function(cb) {
-    git.clone('https://github.com/henryhuang/hexo-theme-aloha.git', { args: './themes/aloha' }, function(err) {
-        if (err) {
-            throw err;
-        }
+gulp.task('configtheme', configtheme);
+
+gulp.task('downloadtheme', function(cb) {
+
+    var options = {
+        hostname: 'codeload.github.com',
+        port: 443,
+        path: '/henryhuang/hexo-theme-aloha/zip/master',
+        method: 'GET'
+    };
+
+    var file = fs.createWriteStream("./aloha.zip");
+
+    var req = https.request(options, function(res) {
+        console.log("statusCode: ", res.statusCode);
+        console.log("headers: ", res.headers);
+        res.on('data', function(d) {
+            file.write(d);
+        }).on('end', function() {
+            gulp.src('./aloha.zip')
+                .pipe(decompress({ strip: 1 }))
+                .pipe(gulp.dest('./themes/aloha'));
+        });
     });
+    req.end();
+
 })
 
 gulp.task('gen', function(cb) {
