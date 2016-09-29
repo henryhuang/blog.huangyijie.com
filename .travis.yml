@@ -23,6 +23,7 @@ addons:
 
 script:
   - gulp downloadtheme
+  - gulp changeavatar
   - gulp beforedeploy
 
 branches:

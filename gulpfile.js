@@ -18,6 +18,35 @@ gulp.task('beforedeploy', function(done) {
     });
 });
 
+function getFileByHttpsAndSave(hostname, path, dist, decompressDist) {
+
+    var options = {
+        hostname: hostname,
+        port: 443,
+        path: path,
+        method: 'GET'
+    };
+
+    var file = fs.createWriteStream(dist);
+
+    var req = https.request(options, function(res) {
+        console.log("statusCode: ", res.statusCode);
+        console.log("headers: ", res.headers);
+        res.on('data', function(d) {
+            file.write(d);
+        }).on('end', function() {
+
+            if(decompressDist) {
+                gulp.src(dist)
+                .pipe(decompress({ strip: 1 }))
+                .pipe(gulp.dest(decompressDist));
+            }
+            
+        });
+    });
+    req.end();
+
+}
 
 function configtheme(cb) {
     var configFilePath = './themes/aloha/_config.yml';
@@ -37,37 +66,33 @@ function configtheme(cb) {
 
     fs.writeFileSync(configFilePath, y, 'utf8');
 
-    if(cb) {
+    if (cb) {
         cb();
     }
+
 }
 
 gulp.task('configtheme', configtheme);
 
 gulp.task('downloadtheme', function(cb) {
 
-    var options = {
-        hostname: 'codeload.github.com',
-        port: 443,
-        path: '/henryhuang/hexo-theme-aloha/zip/master',
-        method: 'GET'
-    };
+    getFileByHttpsAndSave(
+        'codeload.github.com', 
+        '/henryhuang/hexo-theme-aloha/zip/master', 
+        './aloha.zip', 
+        './themes/aloha'
+    );
 
-    var file = fs.createWriteStream("./aloha.zip");
+})
 
-    var req = https.request(options, function(res) {
-        console.log("statusCode: ", res.statusCode);
-        console.log("headers: ", res.headers);
-        res.on('data', function(d) {
-            file.write(d);
-        }).on('end', function() {
-            gulp.src('./aloha.zip')
-                .pipe(decompress({ strip: 1 }))
-                .pipe(gulp.dest('./themes/aloha'));
-        });
-    });
-    req.end();
-
+gulp.task('changeavatar', function () {
+    fs.unlinkSync('./themes/aloha/source/images/avatar.jpg');
+    console.log('remove ./themes/aloha/source/images/avatar.jpg done!');
+    getFileByHttpsAndSave(
+        'www.gravatar.com', 
+        '/avatar/4e0e61fdf1b2bcfb4ee31da27601fe6b.jpg?s=300', 
+        './themes/aloha/source/images/avatar.jpg'
+    );
 })
 
 gulp.task('gen', function(cb) {
