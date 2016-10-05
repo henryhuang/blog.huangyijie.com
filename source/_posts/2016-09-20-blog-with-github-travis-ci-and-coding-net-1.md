@@ -66,7 +66,27 @@ $ travis version
 1.8.2
 ```
 
-如上，如果出现 1.8.2 这样的版本信息，则说明 Travis CI Command Line Client 安装成功。 
+如上，如果出现 1.8.2 这样的版本信息，则说明 Travis CI Command Line Client 安装成功。之后进行登录，执行：
+
+```
+$ travis login
+```
+
+按照提示依次输入用户名、密码，Two-factor码（如果你有设置的话），以下是登录成功的反馈：
+
+```
+$ travis login
+We need your GitHub login to identify you.
+This information will not be sent to Travis CI, only to api.github.com.
+The password will not be displayed.
+
+Try running with --github-token or --auto if you don't want to enter your password anyway.
+
+Username: henryhuang
+Password for henryhuang: *************
+Two-factor authentication code for henryhuang: 403317
+Successfully logged in as henryhuang!
+```
 
 使用 **gem** 需要安装 **ruby 环境**，作为一个开发人员，不要嫌麻烦。
 
