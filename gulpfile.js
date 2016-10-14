@@ -1,6 +1,5 @@
 var exec = require('child_process').exec;
 var gulp = require('gulp');
-var yaml = require('js-yaml');
 var fs = require('fs');
 var git = require('gulp-git');
 var runSequence = require('run-sequence');
@@ -48,31 +47,8 @@ function getFileByHttpsAndSave(hostname, path, dist, decompressDist) {
 
 }
 
-function configtheme(cb) {
-    var configFilePath = './themes/aloha/_config.yml';
-
-    var c = yaml.safeLoad(fs.readFileSync(configFilePath, 'utf8'));
-
-    c.menu.Cat = {
-        name: '五阿哥是一只猫',
-        value: 'http://5thcat.lofter.com/',
-        icon: 'square',
-        target: '_blank'
-    };
-
-    var y = yaml.safeDump(c);
-
-    y = y.replace('\'http://5thcat.lofter.com/\'', 'http://5thcat.lofter.com/');
-
-    fs.writeFileSync(configFilePath, y, 'utf8');
-
-    if (cb) {
-        cb();
-    }
-
-}
-
-gulp.task('configtheme', configtheme);
+var  = require('./gulp/tasks/menu');
+gulp.task('configtheme', menuTask);
 
 gulp.task('downloadtheme', function(cb) {
 
@@ -115,3 +91,4 @@ gulp.task('server', function(cb) {
         console.log(stdout);
     });
 })
+

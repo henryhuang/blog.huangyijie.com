@@ -1,0 +1,16 @@
+[
+    {
+        "ConfigName": "Cat",
+        "icon": "square",
+        "name": "五阿哥是一只猫",
+        "target": "_blank",
+        "value": "http://5thcat.lofter.com/"
+    },
+    {
+        "ConfigName": "Yushiji",
+        "icon": "food",
+        "name": "寓食记",
+        "target": "_blank",
+        "value": "http://yushiji.cnhalo.com/"
+    }
+]
