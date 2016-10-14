@@ -47,7 +47,7 @@ function getFileByHttpsAndSave(hostname, path, dist, decompressDist) {
 
 }
 
-var  = require('./gulp/tasks/menu');
+var menuTask = require('./gulp/tasks/menu');
 gulp.task('configtheme', menuTask);
 
 gulp.task('downloadtheme', function(cb) {
