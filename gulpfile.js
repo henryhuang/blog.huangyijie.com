@@ -72,7 +72,7 @@ gulp.task('changeavatar', function () {
 })
 
 gulp.task('gen', function(cb) {
-    exec('hexo clean && hexo generate', function(err, stdout, stderr) {
+    exec('hexo clean && hexo generate && hexo algolia', function(err, stdout, stderr) {
         if (err) {
             console.error(err);
             return;
