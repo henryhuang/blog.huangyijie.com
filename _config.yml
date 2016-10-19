@@ -67,13 +67,18 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: http://hexo.io/plugins/
+# plugins:
+#   - hexo-algoliasearch
+
 ## Themes: http://hexo.io/themes/
 theme: aloha
 
 algolia:
   applicationID: 'IKCZRGEW0O'
   apiKey: 'c505c894c9118139fa56f79081982d1e'
+  adminApiKey: 'd243a8b2dfa0560082757dada5e49576'
   indexName: 'prod_huangyijie.com'
+  chunkSize: 5000
 
 # social
 twitter:  henryhuang1886
@@ -100,7 +105,7 @@ duoshuo:
 avatar: /images/avatar.jpg
 
 sitemap:
-    path: sitemap.xml
+  path: sitemap.xml
 
 google_site_verification: HxORZgOM92bsRJIEBu1FmbJd6bh4r44-OhACYZ_1uak
 
