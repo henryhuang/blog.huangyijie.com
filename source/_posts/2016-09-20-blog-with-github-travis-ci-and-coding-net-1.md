@@ -38,9 +38,21 @@ $ git push origin source // 保存博客源码
 
 最右边的 **[Coding.net](https://coding.net/)** 是我用来部署博客的，它是类似  Github 的代码托管，并且也提供 pages 的服务，最关键的一点是它是**中国本地**的。最开始我部署在 Github 上，但是由于国内访问实在太慢而且不稳定，所以就选择了 **[Coding.net](https://coding.net/)**。
 
-### 安装 Travis CI Command Line Client
+下一篇将会着重讲 Travis CI 的配置和使用，在这之前先得注册 Travis CI 和安装一个 Travis 官方提供的命令行工具 **Travis CI Command Line Client**，它可以快捷地使用一些功能，比如生成 Travis 的加密文件等。
 
-下一篇将会着重讲 Travis CI 的配置和使用，在这之前先得安装一个 Travis 官方提供的命令行工具 **Travis CI Command Line Client**，它可以快捷的使用一些功能，比如生成 Travis 的加密文件等。
+## 注册 Travis CI
+
+Travis CI 不需要单独注册，直接使用 GitHub 账号登录就可以了。
+
+上官网会发现有 Sign in with GitHub（使用GitHUb登录）和 Sign Up（注册），其实这俩做的事情都一样，就是用 GitHub 账号登录。
+
+登录后界面会显示你的 GitHub repository，默认全部全部没有勾选（“叉号”），选择你的博客的 repository（使之变成“对号”） 后完成第一步，如图：
+
+![注册Travis CI](http://githubimg.qiniudn.com/blog/blog-with-github-travis-ci-and-coding-net/travis-sign-in.png "注册Travis CI")
+
+接下来是添加配置文件 .travis.yml 和 进行第一次 push 代码触发工作，这两部再下一篇再讲。
+
+## 安装 Travis CI Command Line Client
 
 以下的安装教程是我直接翻译的[官方安装说明](https://github.com/travis-ci/travis.rb#installation)。
 
