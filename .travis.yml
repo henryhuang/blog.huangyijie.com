@@ -16,6 +16,7 @@ addons:
 script:
   - gulp downloadtheme
   - gulp changeavatar
+  - gulp changefavicon
   - gulp beforedeploy
 
 branches:
