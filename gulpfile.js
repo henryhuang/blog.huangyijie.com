@@ -64,11 +64,15 @@ gulp.task('downloadtheme', function(cb) {
 gulp.task('changeavatar', function () {
     fs.unlinkSync('./themes/aloha/source/images/avatar.jpg');
     console.log('remove ./themes/aloha/source/images/avatar.jpg done!');
-    getFileByHttpsAndSave(
-        'www.gravatar.com', 
-        '/avatar/4e0e61fdf1b2bcfb4ee31da27601fe6b.jpg?s=300', 
-        './themes/aloha/source/images/avatar.jpg'
-    );
+    fs.createReadStream('./files/avatar.jpg').pipe(fs.createWriteStream('./themes/aloha/source/images/avatar.jpg'));
+    console.log('copy ./files/avatar.jpg done!');
+})
+
+gulp.task('changefavicon', function () {
+    fs.unlinkSync('./themes/aloha/source/favicon.ico');
+    console.log('remove ./themes/aloha/source/favicon.ico done!');
+    fs.createReadStream('./files/favicon.ico').pipe(fs.createWriteStream('./themes/aloha/source/favicon.ico'));
+    console.log('copy ./files/favicon.ico done!');
 })
 
 gulp.task('gen', function(cb) {
