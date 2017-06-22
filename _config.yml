@@ -101,7 +101,7 @@ category_generator:
 
 # duoshuo:
 #   shortname: cnhalo
-# disqus_shortname: huangyijie
+disqus_shortname: huangyijie
 
 avatar: /images/avatar.jpg
 
