@@ -86,10 +86,14 @@ github: henryhuang
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
+# deploy:
+#   type: git
+#   repo: git@git.coding.net:henryhuang/huangyijie.git
+#   branch: coding-pages
 deploy:
   type: git
-  repo: git@git.coding.net:henryhuang/huangyijie.git
-  branch: coding-pages
+  repo: git@github.com:henryhuang/henryhuang.github.io.git
+  branch: master
 
 archive_generator:
   per_page: 0

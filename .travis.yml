@@ -11,7 +11,7 @@ cache:
     - node_modules
 
 addons:
-  ssh_known_hosts: git.coding.net
+  ssh_known_hosts: github.com
 
 script:
   - gulp downloadtheme
