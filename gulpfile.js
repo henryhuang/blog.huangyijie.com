@@ -60,7 +60,7 @@ gulp.task('downloadtheme', function(cb) {
         'codeload.github.com', 
         '/henryhuang/' + themeRepoName + '/zip/master', 
         './' + themeName + '.zip', 
-        './themes/' + 'themeName'
+        './themes/' + themeName
     );
 
 })
