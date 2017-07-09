@@ -12,9 +12,9 @@ gulp.task('default', function() {
 
 // before deploy
 gulp.task('beforedeploy', function(done) {
-    runSequence('configtheme', 'gen', function() {
-        console.log('beforedeploy done!');
-    });
+    // runSequence('configtheme', 'gen', function() {
+    //     console.log('beforedeploy done!');
+    // });
 });
 
 function getFileByHttpsAndSave(hostname, path, dist, decompressDist) {
