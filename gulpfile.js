@@ -7,7 +7,7 @@ var https = require('https');
 var decompress = require('gulp-decompress');
 
 gulp.task('default', function() {
-    console.log("http://huangyijie.com")
+    console.log("https://huangyijie.com")
 });
 
 // before deploy
