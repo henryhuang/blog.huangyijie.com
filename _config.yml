@@ -7,7 +7,7 @@ title: 黄奕杰
 subtitle: 
 description: 黄奕杰，是我的个人博客，记录我想纪录的纪录，不限于计算机，huangyijie.com。
 author: Henry Huang
-language: zh-CN
+language: en
 timezone: Asia/Shanghai
 email: h1886@outlook.com
 
@@ -71,7 +71,7 @@ pagination_dir: page
 #   - hexo-algoliasearch
 
 ## Themes: http://hexo.io/themes/
-theme: aloha
+theme: polarbearsimple
 
 algolia:
   applicationID: 'IKCZRGEW0O'

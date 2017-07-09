@@ -50,28 +50,32 @@ function getFileByHttpsAndSave(hostname, path, dist, decompressDist) {
 var menuTask = require('./gulp/tasks/menu');
 gulp.task('configtheme', menuTask);
 
+
+var themeRepoName = 'hexo-theme-polarbearsimple';
+var themeName = 'polarbearsimple';
+
 gulp.task('downloadtheme', function(cb) {
 
     getFileByHttpsAndSave(
         'codeload.github.com', 
-        '/henryhuang/hexo-theme-aloha/zip/master', 
-        './aloha.zip', 
-        './themes/aloha'
+        '/henryhuang/' + themeRepoName + '/zip/master', 
+        './' + themeName + '.zip', 
+        './themes/' + 'themeName'
     );
 
 })
 
 gulp.task('changeavatar', function () {
-    fs.unlinkSync('./themes/aloha/source/images/avatar.jpg');
-    console.log('remove ./themes/aloha/source/images/avatar.jpg done!');
-    fs.createReadStream('./files/avatar.jpg').pipe(fs.createWriteStream('./themes/aloha/source/images/avatar.jpg'));
+    fs.unlinkSync('./themes/' + themeName + '/source/images/avatar.jpg');
+    console.log('remove ./themes/' + themeName + '/source/images/avatar.jpg done!');
+    fs.createReadStream('./files/avatar.jpg').pipe(fs.createWriteStream('./themes/' + themeName + '/source/images/avatar.jpg'));
     console.log('copy ./files/avatar.jpg done!');
 })
 
 gulp.task('changefavicon', function () {
-    fs.unlinkSync('./themes/aloha/source/favicon.ico');
-    console.log('remove ./themes/aloha/source/favicon.ico done!');
-    fs.createReadStream('./files/favicon.ico').pipe(fs.createWriteStream('./themes/aloha/source/favicon.ico'));
+    fs.unlinkSync('./themes/' + themeName + '/source/favicon.ico');
+    console.log('remove ./themes/' + themeName + '/source/favicon.ico done!');
+    fs.createReadStream('./files/favicon.ico').pipe(fs.createWriteStream('./themes/' + themeName + '/source/favicon.ico'));
     console.log('copy ./files/favicon.ico done!');
 })
 
