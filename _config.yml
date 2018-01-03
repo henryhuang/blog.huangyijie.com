@@ -114,7 +114,9 @@ sitemap:
 
 google_site_verification: HxORZgOM92bsRJIEBu1FmbJd6bh4r44-OhACYZ_1uak
 
-baidu_analytics: 4e64b91f73ca2bfdca6e1584f1ae25c3 
+baidu_analytics: 524bedb21e296866766ab3e99e967178
+
+google_adsense: ca-pub-3638540744166958
 
 marked:
   gfm: true
