@@ -6,18 +6,18 @@ date: 2014-12-05 00:01:09
 
 #### 本人
 
-程序员一名。
+程序员一名，目前在**上海**工作，准备去**深圳**， 寻求**深圳**的机会。
 
 #### 领域
 
 - Java
+- React.js
 - JavaScript / Node.js
 - 以及其他 Web domain相关，无论前端还是后端
-- 架构
 
 #### 联系方式
 
-- GitHub：[HenryHunag](https://github.com/henryhuang)
+- GitHub：[henryhuang](https://github.com/henryhuang)
 - 微博：[奕杰HENRY](http://weibo.com/626242034) 
 - 微信：huangyijie1886（有工作可以联系我）
 - 邮箱：1886#outlook.com
