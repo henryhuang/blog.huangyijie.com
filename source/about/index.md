@@ -6,18 +6,19 @@ date: 2014-12-05 00:01:09
 
 #### 本人
 
-程序员一名，以前在**上海**工作，现在在**深圳**。
+程序员一名，现居**深圳**，以前一直在上海。
 
 #### 领域
 
 - Java
 - React.js
 - JavaScript / Node.js
-- 以及其他 Web domain相关，无论前端还是后端
+- DevOps
+- 以及其他 Web domain相关，前端或者后端
 
 #### 联系方式
 
 - GitHub：[henryhuang](https://github.com/henryhuang)
 - 微博：[奕杰HENRY](http://weibo.com/626242034) 
-- 微信：huangyijie1886 \<!--（有工作可以联系我）--\>
+- 微信：huangyijie1886 <!--（可以联系我）--\>
 - 邮箱：1886#outlook.com
