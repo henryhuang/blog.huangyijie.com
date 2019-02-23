@@ -9,16 +9,16 @@ indexhide: true
 
 发现水库的水位下降了，而水坝上的草长高了许多。
 
-![一朵紫色的花](http://githubimg.qiniudn.com/20130213_shuiku/zisehua_1.jpg "一朵紫色的花")
+![一朵紫色的花](http://githubimg.cnhalo.com/20130213_shuiku/zisehua_1.jpg "一朵紫色的花")
 
-![一朵菊花](http://githubimg.qiniudn.com/20130213_shuiku/juhua_1.jpg "一朵菊花")
+![一朵菊花](http://githubimg.cnhalo.com/20130213_shuiku/juhua_1.jpg "一朵菊花")
 
 <!-- more -->
 
-![水库全景](http://githubimg.qiniudn.com/20130213_shuiku/quanjing_1.jpg "水库全景")
+![水库全景](http://githubimg.cnhalo.com/20130213_shuiku/quanjing_1.jpg "水库全景")
 
-![走来的路1](http://githubimg.qiniudn.com/20130213_shuiku/zailushang_1.jpg "走来的路1")
+![走来的路1](http://githubimg.cnhalo.com/20130213_shuiku/zailushang_1.jpg "走来的路1")
 
-![走来的路2](http://githubimg.qiniudn.com/20130213_shuiku/zailushang_2.jpg "走来的路2")
+![走来的路2](http://githubimg.cnhalo.com/20130213_shuiku/zailushang_2.jpg "走来的路2")
 
-![三叉口](http://githubimg.qiniudn.com/20130213_shuiku/sanchakou_1.jpg "三叉口")
+![三叉口](http://githubimg.cnhalo.com/20130213_shuiku/sanchakou_1.jpg "三叉口")

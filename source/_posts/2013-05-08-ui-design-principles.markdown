@@ -3,7 +3,7 @@ date:  2013-05-08 09:18
 tags: [文章,舶来品,好文]
 ---
 
-![用户接口（UI）设计的 20 条原则](http://githubimg.qiniudn.com/pics/ui_design_principles.png "用户接口（UI）设计的 20 条原则")
+![用户接口（UI）设计的 20 条原则](http://githubimg.cnhalo.com/pics/ui_design_principles.png "用户接口（UI）设计的 20 条原则")
 
 世界级图形设计大师Paul Rand（保罗.兰德）曾经说过：“设计绝不是简单的排列组合与简单地再编辑，它应当充满着价值和意义，去说明道理，去删繁就简，去阐明演绎，去修饰美 化，去赞美褒扬，使其有戏剧意味，让人们信服你所言……”，由此可见，设计绝非轻而易举之事，优秀的设计更是难上加难，今日小编偶然发现一篇界面设计师 Joshua Porter博客当中的一篇文章——《Principles of User Interface Design》，文章中列举了20大UI设计原则，看完之后，觉得挺受启发，于是试着将其编译，希望能够给广大设计师——特别是刚入门的初级设计师，提供 较好的学习机会。全文编译如下：
 

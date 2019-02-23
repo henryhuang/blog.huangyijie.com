@@ -99,7 +99,7 @@ Hooray, .travis.yml looks valid :)
 
 Travis 提供了加密文件的支持，什么意思呢？我们可以对文件（这里指私钥）在本地进行加密，然后把加密过后的文件放在项目里，那么别人就无法获取里面的真实内容。然后我们在让 Travis 执行脚本的时候，在读取加密文件之前对文件进行解密（使用的解密密码提前在 Travis 上配置好了），这样就可以达到不将文件内容暴露，并且让 Travis 获取到真实内容的目的了，大概的时序图如下：
 
-![Travis文件加密](http://githubimg.qiniudn.com/image/jpegTravisEncFileSequenceDiagram.jpg "Travis文件加密")
+![Travis文件加密](http://githubimg.cnhalo.com/image/jpegTravisEncFileSequenceDiagram.jpg "Travis文件加密")
 
 #### Travis 文件加密
 
@@ -118,7 +118,7 @@ id_rsa 是私钥文件，执行后博客根目录下会生成 id_rsa.enc 文件�
 
 之后登录 Travis CI 中 repositry 的 Settings 界面：
 
-![Settings](http://githubimg.qiniudn.com/blog/blog-with-github-travis-ci-and-coding-net/travis-ci-key.png "Settings")
+![Settings](http://githubimg.cnhalo.com/blog/blog-with-github-travis-ci-and-coding-net/travis-ci-key.png "Settings")
 
 Travis CI 会给我们自动生成两个环境变量--两个 key，这两个 key 是对私钥加密文件进行解密的用的。
 
