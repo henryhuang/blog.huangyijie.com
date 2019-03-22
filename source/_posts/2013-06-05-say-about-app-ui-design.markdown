@@ -14,36 +14,36 @@ tags: [日志,杂事,UI]
 
 ###网易新闻
 
-![网易新闻](http://githubimg.cnhalo.com/20130605_app_imgs/163_news.jpg "网易新闻")
+![网易新闻](http://githubimg.wxio.club/20130605_app_imgs/163_news.jpg "网易新闻")
 
 <!-- more -->
 
 ###网易音乐
 
-![网易音乐](http://githubimg.cnhalo.com/20130605_app_imgs/163_music.jpg "网易音乐")
+![网易音乐](http://githubimg.wxio.club/20130605_app_imgs/163_music.jpg "网易音乐")
 
 ###Lofter
 
-![Lofter](http://githubimg.cnhalo.com/20130605_app_imgs/lofter.jpg "Lofter")
+![Lofter](http://githubimg.wxio.club/20130605_app_imgs/lofter.jpg "Lofter")
 
 对于腾讯的产品，已经很长时间了，不对的更新，但是始终还是处于两排的状态，或许可以说是因为腾讯产品的使用人群多，需要按照使用多标准去设计，但是我觉得嘛，他们就是先设计iphone的，然后安卓就不去有针对性的设计，直接搬过来了。
 
 ###微信
 
-![微信](http://githubimg.cnhalo.com/20130605_app_imgs/wechat.jpg "微信")
+![微信](http://githubimg.wxio.club/20130605_app_imgs/wechat.jpg "微信")
 
 ###手机QQ
 
-![手机QQ](http://githubimg.cnhalo.com/20130605_app_imgs/phone_qq.jpg "手机QQ")
+![手机QQ](http://githubimg.wxio.club/20130605_app_imgs/phone_qq.jpg "手机QQ")
 
 当然，最好的还是谷歌，谷歌的产品应该算是标准了。但是因为天朝这个原因么，所以也不是经常去使用，自然就对他们的东西感情不是很深。
 
 ###谷歌地图
 
-![谷歌地图](http://githubimg.cnhalo.com/20130605_app_imgs/googl_map.jpg "谷歌地图")
+![谷歌地图](http://githubimg.wxio.club/20130605_app_imgs/googl_map.jpg "谷歌地图")
 
 ###GooglePlus
 
-![GooglePlus](http://githubimg.cnhalo.com/20130605_app_imgs/googleplus.jpg "GooglePlus")
+![GooglePlus](http://githubimg.wxio.club/20130605_app_imgs/googleplus.jpg "GooglePlus")
 
 还有很多很多的应用，就不细说了。。。

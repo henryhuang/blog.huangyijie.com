@@ -6,7 +6,7 @@ tags: [IT,设计模式,Java]
 
 ### 单例模式类图（这是饿汉式的）
 
-![单例模式类图](http://cnhalo.qiniudn.com/designpatterns/singleton_class.jpg)
+![单例模式类图](http://cnhaloimg.wxio.club/designpatterns/singleton_class.jpg)
 
 ### 单例模式通用代码（饿汉式）
 

@@ -1,6 +1,7 @@
 title: 使用Github、Travis-CI和Coding.net自动部署博客［一］
 date: 2016-09-20 22:38:41
 tags: ["github", "travis", "coding.net"]
+cover: http://githubimg.wxio.club/travisci.jpg
 ---
 在从前，我在本地写一篇文章后要将它不熟到服务器并且提交源码，需要这么几个步骤：
 
@@ -25,7 +26,7 @@ $ git push origin source // 保存博客源码
 
 那么，具体是怎么个自动部署法？这是时序图：
 
-![自动部署是时序图](http://githubimg.cnhalo.com/blog-with-github-travis-ci-SequenceDiagram.jpg "自动部署时序图")
+![自动部署是时序图](http://githubimg.wxio.club/blog-with-github-travis-ci-SequenceDiagram.jpg "自动部署时序图")
 
 1. 创建文章；
 2. 将代码 push 到远程仓库，这里是 Github；
@@ -48,7 +49,7 @@ Travis CI 不需要单独注册，直接使用 GitHub 账号登录就可以了�
 
 登录后界面会显示你的 GitHub repository，默认全部全部没有勾选（“叉号”），选择你的博客的 repository（使之变成“对号”） 后完成第一步，如图：
 
-![注册Travis CI](http://githubimg.cnhalo.com/blog/blog-with-github-travis-ci-and-coding-net/travis-sign-in.png "注册Travis CI")
+![注册Travis CI](http://githubimg.wxio.club/blog/blog-with-github-travis-ci-and-coding-net/travis-sign-in.png "注册Travis CI")
 
 接下来是添加配置文件 .travis.yml 和 进行第一次 push 代码触发工作，这两部再下一篇再讲。
 

@@ -17,7 +17,7 @@ tags: [设计模式,观察者,observer]
 **ConcreteObserver具体的观察者**：每个观察在接收到消息后的处理反应是不同，各个观察者有自己的处理逻辑。
 
 ###3. 模式类图
-![观察者模式类图](http://githubimg.cnhalo.com/designpatterns/patterns_observer.png)
+![观察者模式类图](http://githubimg.wxio.club/designpatterns/patterns_observer.png)
 <!-- more -->
 
 ###4. 通用代码

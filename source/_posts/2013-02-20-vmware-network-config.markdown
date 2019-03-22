@@ -25,7 +25,7 @@ tags: [IT,VMware,虚拟机]
 
 #### __1.三种类型的大概描述:__
 
-![Virtual Network Editor](http://cnhalo.qiniudn.com/20121126/virtual_network_editor.jpg)
+![Virtual Network Editor](http://cnhaloimg.wxio.club/20121126/virtual_network_editor.jpg)
 
 其中__Bridged__和__NAT__必须有，而且只能是一个。
 
@@ -38,7 +38,7 @@ tags: [IT,VMware,虚拟机]
 
 __Bridged__的__Bridged to__最好不要设置成自动:
 
-![Bridged_to](http://cnhalo.qiniudn.com/20121126/bridged_information.jpg)
+![Bridged_to](http://cnhaloimg.wxio.club/20121126/bridged_information.jpg)
 
 <br>
 
@@ -46,14 +46,14 @@ __Bridged__的__Bridged to__最好不要设置成自动:
 
 __NAT__模式下，需要将虚拟机里的网关设置成__NAT Setting__里的__GatewayIP__：
 
-![Nat_settings](http://cnhalo.qiniudn.com/20121126/nat_settings.jpg)
+![Nat_settings](http://cnhaloimg.wxio.club/20121126/nat_settings.jpg)
 
 __NAT__和__Host-only__选择后，下面的勾选框就成可编辑状态:
 
-![Nat_HostOnly](http://cnhalo.qiniudn.com/20121126/nat_host_only_information.jpg)
+![Nat_HostOnly](http://cnhaloimg.wxio.club/20121126/nat_host_only_information.jpg)
 
 __Subnet IP__配成某个网段后，虚拟机和主机只要在这个网段，在对应的模式下就可以通信了。
 
 勾选__Connect a host_virtual adapter to this network__后，主机就会出来虚拟网卡:
 
-![virtual_interface](http://cnhalo.qiniudn.com/20121126/virtual_interface.jpg)
+![virtual_interface](http://cnhaloimg.wxio.club/20121126/virtual_interface.jpg)

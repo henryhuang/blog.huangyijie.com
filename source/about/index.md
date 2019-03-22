@@ -2,7 +2,7 @@ title:
 date: 2014-12-05 00:01:09
 ---
 
-![五阿哥和六六](http://githubimg.cnhalo.com/image/cat/twocat.png)
+![五阿哥和六六](http://githubimg.wxio.club/image/cat/twocat.png)
 
 #### 本人
 

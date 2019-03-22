@@ -4,7 +4,7 @@ tags: [IT,设计模式,Java]
 ---
 首先，看一下比较实用的工厂模式的通用源码。
 ### 工厂方法模式通用类图
-![工厂模式类图](http://cnhalo.qiniudn.com/designpatterns/factory_class.jpg)
+![工厂模式类图](http://cnhaloimg.wxio.club/designpatterns/factory_class.jpg)
 ### 抽象产品类
 <!--more-->
 

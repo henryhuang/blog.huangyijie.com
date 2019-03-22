@@ -1,6 +1,7 @@
 title: 使用Github、Travis-CI和Coding.net自动部署博客［三］
 date: 2017-06-22 22:32:47
 tags: ["github", "travis", "coding.net"]
+cover: http://githubimg.wxio.club/travisci.jpg
 ---
 迟迟到来的第三篇，也就是最后一篇。
 
