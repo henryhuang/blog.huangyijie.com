@@ -1,4 +1,6 @@
+---
 title: {{ title }}
 date: {{ date }}
-tags:
+tags: 
+cover: http://githubimg.wxio.club/sea_common_cover.jpg
 ---
