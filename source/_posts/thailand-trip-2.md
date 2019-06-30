@@ -1,10 +1,11 @@
----
-title: 泰国之旅 [二]
+title: '泰国之旅 [二]'
+tags:
+  - 不说技术
+  - 旅行
+  - 泰国
+cover: 'http://githubimg.wxio.club/thai/1/bbk_art11.jpeg'
 date: 2019-03-31 11:01:13
-tags: [不说技术, 旅行, 泰国]
-cover: http://githubimg.wxio.club/thai/1/bbk_art11.jpeg
 ---
-
 今天起来很早，可能是旅游的缘故，在国内早上起来很晚，而在曼谷就很早起来，可能是想争分夺秒的缘故吧。
 
 虽然今天起来得很早，但是磨磨蹭蹭，再泡个澡，就10点了。
@@ -82,3 +83,7 @@ cover: http://githubimg.wxio.club/thai/1/bbk_art11.jpeg
 吃完就回酒店了，今天实在太累，睡觉了。
 
 未完待续。
+
+---
+
+同步在我的马蜂窝：[泰国之旅 [二]](http://www.mafengwo.cn/i/12216990.html)。
