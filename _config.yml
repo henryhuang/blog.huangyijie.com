@@ -65,20 +65,26 @@ time_format: HH:mm:ss
 per_page: 20
 pagination_dir: page
 
-# Extensions
-## Plugins: http://hexo.io/plugins/
-# plugins:
-#   - hexo-algoliasearch
+#plugins:
+#- hexo-algoliasearch
 
-## Themes: http://hexo.io/themes/
 theme: polarbearsimple
 
 algolia:
-  applicationID: 'IKCZRGEW0O'
-  apiKey: 'c505c894c9118139fa56f79081982d1e'
-  adminApiKey: 'd243a8b2dfa0560082757dada5e49576'
-  indexName: 'prod_huangyijie.com'
+  appId: "TLM40E1NV5"
+  apiKey: "604ab1f18246ada1be6c522be2151fb2"
+  adminApiKey: "562f0030609ebd7d5fc200ba80b74080"
   chunkSize: 5000
+  indexName: "prod_huangyijie.com"
+  fields:
+  - content:strip:truncate,0,500
+  - excerpt:strip
+  - permalink
+  - cover
+  - slug
+  - tags
+  - categories
+  - title
 
 # social
 twitter:  henryhuang1886

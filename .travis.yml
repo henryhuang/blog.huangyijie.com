@@ -18,6 +18,7 @@ script:
 # - gulp changeavatar
   - gulp changefavicon
   - gulp beforedeploy
+  - npm run create_search
 
 branches:
   only:
