@@ -12,54 +12,52 @@ tags: [IT,Groovy,JVM]
 
 ### 1. Groovy的安装
 
-+ 安装GVM
+- 安装GVM
 
 使用[GVM](http://gvmtool.net)(the Groovy enVironment Manager)进行安装和版本管理，进行版本的随意切换，GVM的概念可以说是来自RVM，它不仅可以管理Groovy，还可以管理crash, gaiden, glide, gradle, grails, griffon
 
 ``` bash
 curl -s get.gvmtool.net | bash
 ```
-+ 直接安装最新版的Groovy
 
-	``` bash
-	gvm install groovy
-	```
+- 直接安装最新版的Groovy
+
+``` bash
+gvm install groovy
+```
 	
-+ 安装指定版本的Groovy
+- 安装指定版本的Groovy
 	
 首先查看所有版本：
-
-   ``` bash
-	gvm list groovy
-	 
-	```
-		
+  
+``` bash
+gvm list groovy
+```
+	
 然后加入版本号即可：
 	
-	
-	``` bash
-	gvm install groovy 2.3.7
-	```
-
+``` bash
+gvm install groovy 2.3.7
+```
 
 ### 2. Groovy的编程
 
-+ Hello World
+- Hello World
 
 Groovy可以不像Java那样每个class文件必须有一个类，它就像很多脚本一样，一行代码：
 
-```
+``` java
 print "Hello World"
 ```
 
 保存为hw.groovy，
 
-```
+``` java
 groovy hw.groovy
 ```
 解决！而在Java里，则要这么麻烦
 
-```
+``` java
 public class HelloWorld {
 
 	public static void main(String[] args) {
@@ -76,7 +74,7 @@ java hw.class
 ```
 这一点Groovy还是挺方便的了。
 
-+ groovyConsole
+- groovyConsole
 
 Groovy还提供了GroovyConsole，一个简单的IDE，也是挺方便的，可以通过以下方式启动：
 
@@ -204,7 +202,6 @@ def pringHelp() {
 	print "usage : groovy Octo2Hexo.groovy octoFolderPath outputFolderPath"
 }
 ```
-
 
 ### 3. 结语
 Groovy有很多很亮的特性，使得它可以成为和Java共用的语言，这也是我为什么要选择Groovy作为JVM脚本语言入门的最大的理由（最为对比，另一个是Scala），他的语法和Java很像，本来用Java实现的逻辑可以用Groovy更简短的语句实现。Groovy和Java之间的相互调用也是很方便的。
